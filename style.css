@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  font-family: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #6666;
+  margin: 0.5em 0;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: #eaeaea;
+  color: #333;
+}
+
+/* header showcase */
+
+#showcase {
+  min-height: 450px;
+  color: #fff;
+}
+#showcase.sticky {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+#showcase .bg-image {
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(images/prg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+}
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+#showcase .content-wrap,
+#section-a .content-wrap {
+  padding: 0 1.5em;
+}
+/*section-A*/
+#section-a {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+}
+.grid .card img {
+  width: 100%;
+}
+.grid .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*section-B*/
+#section-b {
+  padding: 2em 1em 1em;
+}
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#section-b li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+.card-content {
+  padding: 1.5em;
+}
+/*section-c*/
+
+#section-c {
+  background: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+/*section-d*/
+#section-d .box {
+  padding: 2em;
+  color: #fff;
+}
+#section-d .box:nth-child(1) {
+  background: #2690d4;
+}
+/*footer*/
+#main-footer {
+  padding: 2em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+/*Media queries*/
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+  }
+  .content-wrap #section-b ul {
+    grid-column: 2/4;
+  }
+  #section-d {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
